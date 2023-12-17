@@ -14,7 +14,9 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container px-4 px-lg-5">
-            <img src="/imgs/logonopng.png" width="90px" height="50px" class="logo" alt="Logo">
+            <div class="logo">
+                <img src="/imgs/logonopng.png" width="90px" height="50px" class="logo-image" alt="Logo">
+            </div>
             <a class="navbar-brand" href="#page-top">Make Memories</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -40,47 +42,45 @@
     <main>
         <!--Secçõa 1 Cards dos eventos mais vistos-->
         <section>
-            <h2>Section 1</h2>
-            <p>Conteúdo da sessão 1.</p>
-            <div class="container">
+            <div class="container-cards">
+                    <input type="radio" name="slider" id="item-1" checked>
+                    <input type="radio" name="slider" id="item-2">
+                    <input type="radio" name="slider" id="item-3">
                 <div class="cards">
                     <label class="card" for="item-1" id="card-1">
                         <img src="imgs/imagem1.jpg" class="card-image" alt="paisagens1">
                     </label>
-                    <label class="card" for="item-2" id="card-1">
+                    <label class="card" for="item-2" id="card-2">
                         <img src="imgs/imagem2.jpg" class="card-image" alt="paisagens1">
                     </label>
-                    <label class="card" for="item-3" id="card-1">
+                    <label class="card" for="item-3" id="card-3">
                         <img src="imgs/imagem4.png" class="card-image" alt="paisagens1">
                     </label>
                 </div>
                 <div class="content">
-                    <div class="info-area" id="test">
-                        <label class="song-info" id="song-info-1">
-                            <div class="title">Paisagem 1</div>
-                            <div class="sub-line">
-                                <div class="subtitle">Evento numero 1</div>
-                            </div>
-                        </label>
-                        <label class="song-info" id="song-info-1">
-                            <div class="title">Paisagem 2</div>
-                            <div class="sub-line">
-                                <div class="subtitle">Evento numero 2</div>
-                            </div>
-                        </label>
-                        <label class="song-info" id="song-info-1">
-                            <div class="title">Paisagem 3</div>
-                            <div class="sub-line">
-                                <div class="subtitle">Evento numero 3</div>
-                            </div>
-                        </label>
+                    <div class="upperpart">
+                        <div class="info-area" id="test">
+                            <label class="event-info" id="song-info-1">
+                                <div class="title">Paisagem 1</div>
+                                <div class="sub-line">
+                                    <div class="subtitle">Evento numero 1</div>
+                                </div>
+                            </label>
+                            <label class="event-info" id="song-info-1">
+                                <div class="title">Paisagem 2</div>
+                                <div class="sub-line">
+                                    <div class="subtitle">Evento numero 2</div>
+                                </div>
+                            </label>
+                            <label class="event-info" id="song-info-1">
+                                <div class="title">Paisagem 3</div>
+                                <div class="sub-line">
+                                    <div class="subtitle">Evento numero 3</div>
+                                </div>
+                            </label>
+                        </div>
                     </div>
                 </div>
-        </section>
-        <!--Secção 2-->
-        <section>
-            <h2>Seção 2</h2>
-            <p>Conteúdo da seção 2.</p>
         </section>
     </main>
     <footer>
