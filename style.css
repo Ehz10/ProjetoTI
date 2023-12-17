@@ -1,17 +1,19 @@
-body {
+html{
     font-family: 'Roboto', sans-serif;
     background-color: #F2F1EB;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
 }
-
-.navbar {
-    background: rgb(52, 73, 94, 0, 0);
-    color: black; /* Set the color to black */
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
-    padding: 25px;
-    animation: fadeIn 0.5s ease-in-out;
-    position: relative;
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+    font-family: 'Roboto', sans-serif;
 }
-
+/*TODO: O que é isto? faz o quê?*/
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -22,33 +24,6 @@ body {
         transform: translateY(0);
     }
 }
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-.logo {
-    
-    font-size: 1.8em;
-    font-weight: bold;
-    color: black; /* Set the color to black */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-.nav-list {
-    list-style: none;
-    margin: 100px;
-    padding: 0;
-    position: absolute;
-    display: flex;
-    opacity: 10;
-    animation: slideDown 0.5s ease-in-out forwards;
-
-    
-}
-
 @keyframes slideDown {
     from {
         transform: translateY(-20px);
@@ -58,62 +33,16 @@ body {
         opacity: 1;
     }
 }
-
-.nav-list li {
-    margin-right: 20px;
-}
-
-.nav-list a {
-    text-decoration: none;
+/*Barra de Navegação*/
+.navbar {
+    background: rgb(52, 73, 94, 0, 0);
     color: black; /* Set the color to black */
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    animation: fadeIn 0.5s ease-in-out;
+    position: relative;
 }
-
-.nav-list a:hover {
-    color: #333; /* Change the hover color to a darker shade */
-}
-
-.burger-menu {
-    font-size: 1.5em;
-    cursor: pointer;
-    display: none;
-}
-
-.content {
-    padding: 400px;
-    text-align: center;
-    color: #333;
-}
-
-@media screen and (max-width: 768px) {
-   
-    .nav-list {
-        display: none;
-        flex-direction: column;
-        text-align: center;
-        width: 100%;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background: rgba(52, 73, 94, 0.0);
-        
-    }
-
-    .nav-list.show {
-        display: flex;
-    }
-
-    .nav-list li {
-        margin: 10px 0;
-    }
-
-    .burger-menu {
-        display: block;
-    }
-  
-}
-
+/*Estilo video*/
 video {
     width: 100%;
     height: auto;
@@ -123,9 +52,18 @@ video {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
 video:hover {
     opacity: 0.8;
     transition: opacity 0.3s ease-in-out;
 }
-
+/*Alterações Logo*/
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: black; /* Set the color to black */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+.card-image{
+    width: 300px;
+    height: 300px;
+}
