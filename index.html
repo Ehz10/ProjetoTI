@@ -10,58 +10,90 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-    <body>
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-            <div class="container px-4 px-lg-5">
-                <img src="/imgs/logonopng.png" width="90" height="50" alt="Logo">
-                <a class="navbar-brand" href="#page-top">Make Memories</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#projects">Eventos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#signup">Contactos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#login">Login</a></li>
-                    </ul>
-                </div>
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <img src="/imgs/logonopng.png" width="90px" height="50px" class="logo" alt="Logo">
+            <a class="navbar-brand" href="#page-top">Make Memories</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#projects">Eventos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#signup">Contactos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#login">Login</a></li>
+                </ul>
             </div>
-        </nav>
-        <header>
-
-    <header>
-        <video autoplay muted><source src="/videos/videoempresa.mp4" type="video/mp4">Seu navegador não suporta o elemento de vídeo.</video>
-    </header>
-
+        </div>
+    </nav>
+    <div class="video">
+        <video autoplay muted>
+            <source src="/videos/videoempresa.mp4" type="video/mp4">Seu navegador não suporta o elemento de vídeo.
+        </video>
+    </div>
     <main>
+        <!--Secçõa 1 Cards dos eventos mais vistos-->
         <section>
-            <h2>Seção 1</h2>
-            <p>Conteúdo da seção 1.</p>
+            <h2>Section 1</h2>
+            <p>Conteúdo da sessão 1.</p>
+            <div class="container">
+                <div class="cards">
+                    <label class="card" for="item-1" id="card-1">
+                        <img src="imgs/imagem1.jpg" class="card-image" alt="paisagens1">
+                    </label>
+                    <label class="card" for="item-2" id="card-1">
+                        <img src="imgs/imagem2.jpg" class="card-image" alt="paisagens1">
+                    </label>
+                    <label class="card" for="item-3" id="card-1">
+                        <img src="imgs/imagem4.png" class="card-image" alt="paisagens1">
+                    </label>
+                </div>
+                <div class="content">
+                    <div class="info-area" id="test">
+                        <label class="song-info" id="song-info-1">
+                            <div class="title">Paisagem 1</div>
+                            <div class="sub-line">
+                                <div class="subtitle">Evento numero 1</div>
+                            </div>
+                        </label>
+                        <label class="song-info" id="song-info-1">
+                            <div class="title">Paisagem 2</div>
+                            <div class="sub-line">
+                                <div class="subtitle">Evento numero 2</div>
+                            </div>
+                        </label>
+                        <label class="song-info" id="song-info-1">
+                            <div class="title">Paisagem 3</div>
+                            <div class="sub-line">
+                                <div class="subtitle">Evento numero 3</div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
         </section>
-
+        <!--Secção 2-->
         <section>
             <h2>Seção 2</h2>
             <p>Conteúdo da seção 2.</p>
         </section>
-
-        <!-- Adicione mais seções conforme necessário -->
-
     </main>
-
     <footer>
         <p>Rodapé da página &copy; 2023</p>
         <!-- Adicione elementos do rodapé aqui, como informações de contato -->
     </footer>
-
     <!-- Adicione scripts JavaScript aqui, se necessário -->
     <!-- <script src="script.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
+
 </body>
 
 </html>
-  
