@@ -1,0 +1,43 @@
+/*Carrossel*/
+    /*Container*/
+    .container-cards{
+        width: 100%;
+        max-height: 600px;
+        height: 100%;
+        transform-style: preserve-3d;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .carrossel{
+        max-width: 600px;
+        max-height: 700px;
+        display: flex;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    /*Estilo dos cards em carrossel*/
+    .card{
+        display: relative;
+        text-align: center;
+        background-color: #cfcfcfe8;
+        border-radius: 15px;
+        flex: 100%; /* Each card takes the full width of the container */
+        transition: transform 0.5s ease-in-out;
+        cursor: pointer;
+    }
+    .card input{
+        display: none;
+    }
+    .card img{
+        border-radius: 15px 15px 0px 0px;
+    }
+    .card p{
+        justify-content: center;
+        align-items: left;
+    }
+    .content{
+        height: 100px;
+        margin-bottom: 30px;
+    }
