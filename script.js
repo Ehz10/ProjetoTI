@@ -24,6 +24,7 @@ let slideIndex = 0;
       setTimeout(showSlides, 2000); // Change image every 2 seconds
     }
 
+
 const listOfCardElements = document.querySelectorAll('.card');
 const cardContainer = document.querySelector('.container-cards');
 

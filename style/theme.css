@@ -1,112 +1,122 @@
 /*Estilo HTML e MAIN*/
-    html{
-        font-family: 'Roboto', sans-serif;
-        background-color: #F2F1EB;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-    }
-    main{
-        display: absolute;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Roboto', sans-serif;
-        background-color: #F2F1EB;
-        width: 100%;
-    }
+html {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F2F1EB;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    display: absolute;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F2F1EB;
+    width: 100%;
+}
+
 /*Animações de fade in quando se abre o site*/
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-            transform: translateY(-20px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-/*Animação que faz um elemento deslizar para baixo quando se inicia o site*/
-    @keyframes slideDown {
-        from {
-            transform: translateY(-20px);
-        }
-        to {
-            transform: translateY(0);
-            opacity: 1;
-        }
-    }
-/*Barra de Navegação*/
-    .navbar {
-        width: 100%;
-        background-color: #F2F1EB;
-        color: black; 
-        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
-        padding: 25px;
-        animation: fadeIn 0.5s ease-in-out;
-        position: relative;
-        font-weight: 900;
-    }
-    .navbar h1{
-        font-size: 20px;
-        text-shadow: 5px 5px 5px white;
-    }
-    .navbar a:hover{
-        font-size: 17px;
-    }
-/*Estilo video*/
-    video {
-        width: 100%;
-        height: auto;
-        display: block;
-        margin: 0 auto; /* Centralizar o vídeo na página */
-        border: 2px solid #ddd;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
     }
 
-    video:hover {
-        opacity: 0.8;
-        transition: opacity 0.3s ease-in-out;
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
+}
+
+/*Animação que faz um elemento deslizar para baixo quando se inicia o site*/
+@keyframes slideDown {
+    from {
+        transform: translateY(-20px);
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/*Barra de Navegação*/
+.navbar {
+    width: 100%;
+    background-color: #F2F1EB;
+    color: black;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    animation: fadeIn 0.5s ease-in-out;
+    position: relative;
+    font-weight: 900;
+}
+
+.navbar h1 {
+    font-size: 20px;
+    text-shadow: 5px 5px 5px white;
+}
+
+.navbar a:hover {
+    font-size: 17px;
+}
+
+/*Estilo video*/
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    /* Centralizar o vídeo na página */
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
 
 /*Alterações Logo*/
-    .logo{
-        width: 90px;
-        height: 50px;
-    }
-    .logo-image{
-        font-size: 1.8em;
-        font-weight: bold;
-        color: black; 
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-    }
-/*Estilo Rodapé*/
-    footer {
-        text-align: center;
-        width: 100%;
-        bottom: 0;
-        color: black; 
-        font-weight: bold;
-        background-color: #F2F1EB;
-        height: 150px;
-    }
-    .footer-info p{
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-/*Alterações das caractérias do Audio*/
-    audio{
-        left: 0;
-        width: 100%;
-        height: 20px;
-        background-color: #F2F1EB; /* Cor de fundo com opacidade */
-    }
-/*Quando o ecrão for 950 aumenta a altura da barra do audio*/
-    @media (min-width: 950px) {
-        audio{
-            height: 45px;
-        }
-    }
+.logo {
+    width: 90px;
+    height: 50px;
+}
 
+.logo-image {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: black;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/*Estilo Rodapé*/
+footer {
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    color: black;
+    font-weight: bold;
+    background-color: #F2F1EB;
+    height: 150px;
+}
+
+.footer-info p {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*Alterações das caractérias do Audio*/
+audio {
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-color: #F2F1EB;
+    /* Cor de fundo com opacidade */
+}
+
+/*Quando o ecrão for 950 aumenta a altura da barra do audio*/
+@media (min-width: 950px) {
+    audio {
+        height: 45px;
+    }
+}
