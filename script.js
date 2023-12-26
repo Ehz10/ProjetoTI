@@ -23,3 +23,13 @@ let slideIndex = 0;
       dots[slideIndex-1].className += " active";
       setTimeout(showSlides, 2000); // Change image every 2 seconds
     }
+
+const listOfCardElements = document.querySelectorAll('.card');
+const cardContainer = document.querySelector('.container-cards');
+
+listOfCardElements.forEach((cardElement, index) => {
+  cardElement.addEventListener('click', () => {
+    const scrollLeft = index * listOfCardElements[0].offsetWidth;
+    cardContainer.scrollTo({ left: scrollLeft, behavior: 'smooth' });
+  });
+});

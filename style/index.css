@@ -9,6 +9,9 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        overflow: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
     }
     .carrossel{
         max-width: 600px;
@@ -23,9 +26,11 @@
         text-align: center;
         background-color: #cfcfcfe8;
         border-radius: 15px;
-        flex: 100%; /* Each card takes the full width of the container */
+        flex: 0 0 auto; /* Each card takes the full width of the container */
         transition: transform 0.5s ease-in-out;
         cursor: pointer;
+        margin-right: 20px;
+        scroll-snap-align: start;
     }
     .card input{
         display: none;
@@ -40,4 +45,17 @@
     .content{
         height: 100px;
         margin-bottom: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
+
+@media (min-width: 600px) {
+    .card {
+        width: 50%;
+    }
+}
+@media (min-width: 900px){
+    .card{
+        width: 50%;
+    }
+}
