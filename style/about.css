@@ -7,7 +7,11 @@
   position: relative;
   margin: auto;
   width: 100%;
+
   
+}
+.Sobre-Container{
+  text-align: center;
 }
 
 .mySlides {
@@ -15,6 +19,46 @@
   
 }
 
+.Sobre-Right img{
+  float: right;
+  margin: 20px;
+  width:170px;
+  height:170px;
+ 
+}
+
+.Sobre-Left img{
+  float: left;
+  margin: 20px;
+  width:170px;
+  height:170px;
+  
+}
+
+
+.Sobre-Right-txt{
+  margin: 40px;
+  letter-spacing: 0.1em;
+  margin-right: 10px;
+  padding-left: 50px;
+  margin-top: 30px;
+}
+
+.Sobre-Left-txt{
+  margin: 40px;
+  margin-right: 10px;
+  letter-spacing: 0.1em;
+  padding-left: 50px;
+  margin-top: 30px;
+}
+ /* On bigger screens, increase text size */
+ @media only screen and (min-width: 950px) {
+  .Sobre-Right img {width:250px}
+  .Sobre-Right img {height:250px}
+  .Sobre-Left img {width:250px}
+  .Sobre-Left img {height:250px}
+ }
+ 
 h3 {
   color: #f2f2f2;
   font-size: 15px;
@@ -28,14 +72,13 @@ h3 {
 
 }
 
+
 h2{
   text-align: center;
   text-decoration: underline;
 }
 
-p{
-  text-align: center;
-}
+
 
 /*Dots*/
 .dots {
