@@ -16,7 +16,16 @@ main {
     background-color: #F2F1EB;
     width: 100%;
 }
-
+body
+{
+  margin:0;
+  padding:0;
+}
+*
+{
+  padding:0;
+  margin:0;
+}
 /*Animações de fade in quando se abre o site*/
 @keyframes fadeIn {
     from {

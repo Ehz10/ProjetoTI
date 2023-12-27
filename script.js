@@ -25,6 +25,7 @@ let slideIndex = 0;
     }
 
 
+/*Script do index.html para rodar as imagens dos cards*/
 const listOfCardElements = document.querySelectorAll('.card');
 const cardContainer = document.querySelector('.container-cards');
 
