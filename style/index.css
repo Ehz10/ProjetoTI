@@ -1,52 +1,63 @@
 /*Carrossel*/
-    /*Container*/
+    /*Container Cards*/
     .container-cards{
-        width: 100%;
-        max-height: 600px;
-        height: 100%;
-        transform-style: preserve-3d;
+        padding: 2rem;
+        max-height: 800px;
+    }
+    /*Wrapper*/
+    .slider-wrapper{
+        position: relative;
+        max-width: 48rem;
+        height: auto;
+        margin: 0 auto;
+    }
+    /*Slider*/
+    .slider{
         display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        overflow: auto;
+        aspect-ratio: 16 / 9;
+        overflow-x: hidden; /*Fazer scroll horizontalmente*/
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
+        box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
     }
-    .carrossel{
-        max-width: 600px;
-        max-height: 700px;
-        display: flex;
-        position: relative;
-        margin-bottom: 20px;
-    }
-    /*Estilo dos cards em carrossel*/
-    .card{
-        display: relative;
-        text-align: center;
-        background-color: #cfcfcfe8;
-        border-radius: 15px;
-        flex: 0 0 auto; /* Each card takes the full width of the container */
-        transition: transform 0.5s ease-in-out;
-        cursor: pointer;
-        margin-right: 20px;
+    .slider-content{
+        width: 100%;
+        flex: 1 0 100%; /*Deixa apenas uma imagem visivel*/
         scroll-snap-align: start;
     }
-    .card input{
-        display: none;
+    .slider img{
     }
-    .card img{
-        border-radius: 15px 15px 0px 0px;
+    /*Slide sides*/
+    .left-side{
+        width: 50%;
+        height: auto;
     }
-    .card p{
-        justify-content: center;
-        align-items: left;
+    .right-side{ 
+        width: 30%;
+        height: auto;
     }
-    .content{
-        height: 100px;
-        margin-bottom: 30px;
-        margin-left: 10px;
-        margin-right: 10px;
+    /*Slider nav*/
+    .slider-nav{
+        display: flex;
+        column-gap: 1rem;
+        position: absolute;
+        bottom: 1.25rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+    .slider-nav a{
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background-color: #fff;
+        opacity: 0.75;
+        transition: opacity ease 250ms;
+    }
+    .slider-nav a:hover{
+        width: 0.7rem;
+        height: 0.7rem;
+        opacity: 1;
     }
 
 @media (min-width: 600px) {
