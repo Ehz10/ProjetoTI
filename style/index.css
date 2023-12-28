@@ -2,7 +2,7 @@
     /*Container Cards*/
     .container-cards{
         padding: 2rem;
-        max-height: 800px;
+        height: 800px;
     }
     /*Wrapper*/
     .slider-wrapper{
@@ -15,17 +15,19 @@
     .slider{
         display: flex;
         aspect-ratio: 16 / 9;
-        overflow-x: hidden; /*Fazer scroll horizontalmente*/
+        overflow-x: auto; /*Fazer scroll horizontalmente*/
+        overflow-x: hidden;
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
         box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
     }
     .slider-content{
-        width: 100%;
         flex: 1 0 100%; /*Deixa apenas uma imagem visivel*/
         scroll-snap-align: start;
     }
     .slider img{
+        width: 100%;
+        height: auto;
     }
     /*Slide sides*/
     .left-side{
