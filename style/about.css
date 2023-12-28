@@ -7,7 +7,11 @@
   position: relative;
   margin: auto;
   width: 100%;
+
   
+}
+.Sobre-Container{
+  text-align: center;
 }
 
 .mySlides {
@@ -15,6 +19,73 @@
   
 }
 
+.Sobre-Right img{
+  float: right;
+  margin: 20px;
+  width:170px;
+  height:170px;
+  box-shadow: 1px 3px 15px #000000;
+}
+
+.Sobre-Left img{
+  float: left;
+  margin: 20px;
+  width:170px;
+  height:170px;
+  box-shadow: 1px 3px 15px #000000;
+  
+}
+
+
+.Sobre-Right-txt{
+  margin: 40px;
+  letter-spacing: 0.1em;
+  margin-right: 10px;
+  padding-left: 50px;
+  margin-top: 30px;
+  margin-left: 10px;
+  text-shadow: 1px 1px 75px #000000;
+}
+.Sobre-Left img:hover{
+border: 1px solid #777;
+box-shadow: 0 0 15px black;
+transition: all .4s ease;
+border-radius:20px;
+opacity: 0.6;
+}
+
+.Sobre-Right img:hover{
+  border: 1px solid #777;
+  box-shadow: 0 0 15px black;
+  transition: all .4s ease;
+  border-radius:20px;
+  opacity: 0.6;
+  }
+
+.Sobre-Left-txt{
+  margin: 40px;
+  margin-right: 10px;
+  margin-left: 10px;
+  letter-spacing: 0.1em;
+  padding-left: 50px;
+  margin-top: 30px;
+  text-shadow: 1px 1px 75px #000000;
+}
+
+i{
+  font-size: 12px;
+}
+ /* On bigger screens, increase text size */
+ @media only screen and (min-width: 950px) {
+  .Sobre-Right img {width:250px}
+  .Sobre-Right img {height:250px}
+  .Sobre-Left img {width:250px}
+  .Sobre-Left img {height:250px}
+  .Sobre-Left-txt{font-size: 20px}
+  .Sobre-Right-txt{font-size: 20px}
+  i{font-size: 17px}
+ }
+ 
 h3 {
   color: #f2f2f2;
   font-size: 15px;
@@ -28,14 +99,13 @@ h3 {
 
 }
 
+
 h2{
   text-align: center;
   text-decoration: underline;
 }
 
-p{
-  text-align: center;
-}
+
 
 /*Dots*/
 .dots {
