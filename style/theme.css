@@ -18,11 +18,11 @@ main {
 }
 body
 {
-  margin:0;
-  padding:0;
+    background-color: #F2F1EB;
+    margin:0;
+    padding:0;
 }
-*
-{
+*{
   padding:0;
   margin:0;
 }
@@ -99,6 +99,7 @@ video {
 
 /*Estilo Rodapé*/
 footer {
+    position:  relative; 
     text-align: center;
     width: 100%;
     bottom: 0;

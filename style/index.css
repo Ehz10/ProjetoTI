@@ -1,70 +1,24 @@
 /*Carrossel*/
-    /*Container Cards*/
-    .container-cards{
-        padding: 2rem;
-        height: 800px;
-        border-radius: 10px;
-        box-shadow: 20px 10px;
-    }
-    /*Wrapper*/
-    .slider-wrapper{
-        position: relative;
-        max-width: 48rem;
-        height: auto;
-        margin: 0 auto;
-    }
-    /*Slider*/
-    .slider{
-        display: flex;
-        aspect-ratio: 16 / 9;
-        overflow-x: hidden;
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
-        box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
-    }
-    .slider-content{
-        flex: 1 0 100%; /*Deixa apenas uma imagem visivel*/
-        scroll-snap-align: start;
-    }
-    .slider img{
-        float: left;
-        width: auto;
-        height: 100%;
-    }
-    .info{
-        left: 10px;
-    }
-    /*Slider nav*/
-    .slider-nav{
-        display: flex;
-        column-gap: 1rem;
-        position: absolute;
-        bottom: 1.25rem;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 1;
-    }
-    .slider-nav a{
-        width: 0.5rem;
-        height: 0.5rem;
-        border-radius: 50%;
-        background-color: #fff;
-        opacity: 0.75;
-        transition: opacity ease 250ms;
-    }
-    .slider-nav a:hover{
-        width: 0.7rem;
-        height: 0.7rem;
-        opacity: 1;
-    }
+/*Container Cards*/
+.carousel{
+    width: 80%;
+    height: auto;
+    background-color: blue;
+}
 
+.prev-button {
+    left: 10px;
+}
+.next-button {
+    right: 10px;
+}
 @media (min-width: 600px) {
-    .card {
+    .carousel-item {
         width: 50%;
     }
 }
 @media (min-width: 900px){
-    .card{
+    .carousel-item{
         width: 50%;
     }
 }
