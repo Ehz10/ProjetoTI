@@ -3,6 +3,8 @@
     .container-cards{
         padding: 2rem;
         height: 800px;
+        border-radius: 10px;
+        box-shadow: 20px 10px;
     }
     /*Wrapper*/
     .slider-wrapper{
@@ -15,7 +17,6 @@
     .slider{
         display: flex;
         aspect-ratio: 16 / 9;
-        overflow-x: auto; /*Fazer scroll horizontalmente*/
         overflow-x: hidden;
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
@@ -26,17 +27,12 @@
         scroll-snap-align: start;
     }
     .slider img{
-        width: 100%;
-        height: auto;
+        float: left;
+        width: auto;
+        height: 100%;
     }
-    /*Slide sides*/
-    .left-side{
-        width: 50%;
-        height: auto;
-    }
-    .right-side{ 
-        width: 30%;
-        height: auto;
+    .info{
+        left: 10px;
     }
     /*Slider nav*/
     .slider-nav{
