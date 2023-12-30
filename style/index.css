@@ -38,8 +38,8 @@
         background-color: #cfcfcfe8;
         border-radius: 15px;
         transition: opacity 0.5s ease-in-out;
-        margin-right: 20px;
-        margin-left: 20px;
+        margin-right: 5px;
+        margin-left: 5px;
         scroll-snap-align: start;
     }
     .show{
@@ -70,6 +70,7 @@
         align-items: left;
     }
     .prev-button{
+        margin-left: 10px;
         border: 0;
         font-size: 30px;
         background-color: #F2F1EB;
@@ -79,6 +80,7 @@
         background-color: #F2F1EB;
     }
     .next-button{
+        margin-right: 10px;
         border: 0;
         font-size: 30px;
         background-color: #F2F1EB;
@@ -116,6 +118,7 @@
         opacity: 1;
         transition: opacity ease 250ms;
     }
+
 @media (max-width: 600px) {
     
 }
