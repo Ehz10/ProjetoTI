@@ -1,9 +1,3 @@
-//Quando abrir o site colocar o volume a 15%
-document.addEventListener('DOMContentLoaded', function () {
-  var audio = document.getElementById('audio')
-audio.volume = 0.10;
-});
-
 //Página no about para trocar a imagem em 2 segundos
 let slideIndex = 0;
     showSlides();
@@ -24,13 +18,3 @@ let slideIndex = 0;
       dots[slideIndex-1].className += " active";
       setTimeout(showSlides, 2000); // Change image every 2 seconds
     }
-
-const listOfCardElements = document.querySelectorAll('.card');
-const cardContainer = document.querySelector('.container-cards');
-
-listOfCardElements.forEach((cardElement, index) => {
-  cardElement.addEventListener('click', () => {
-    const scrollLeft = index * listOfCardElements[0].offsetWidth;
-    cardContainer.scrollTo({ left: scrollLeft, behavior: 'smooth' });
-  });
-});
