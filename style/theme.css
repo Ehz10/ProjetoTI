@@ -72,19 +72,6 @@ body
 .navbar a:hover {
     font-size: 17px;
 }
-
-/*Estilo video*/
-video {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    /* Centralizar o vídeo na página */
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
 /*Alterações Logo*/
 .logo {
     width: 90px;
@@ -114,20 +101,4 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-/*Alterações das caractérias do Audio*/
-audio {
-    left: 0;
-    width: 100%;
-    height: 20px;
-    background-color: #F2F1EB;
-    /* Cor de fundo com opacidade */
-}
-
-/*Quando o ecrão for 950 aumenta a altura da barra do audio*/
-@media (min-width: 950px) {
-    audio {
-        height: 45px;
-    }
 }
