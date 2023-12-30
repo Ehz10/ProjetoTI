@@ -19,12 +19,6 @@ audio {
     /* Cor de fundo com opacidade */
 }
 
-/*Quando o ecrão for 950 aumenta a altura da barra do audio*/
-@media (min-width: 950px) {
-    audio {
-        height: 45px;
-    }
-}
 /*Carrossel*/
     /*Container*/
     main{
