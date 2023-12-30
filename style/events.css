@@ -20,7 +20,6 @@
     transition: transform 1000ms;
   }
   section ul{
-    
     list-style: none; /*Isto remove o ponto da lista*/
     margin: 0;
     display: grid;
@@ -37,7 +36,6 @@
   }
 /*Este estilo apenas aparece quando o despositivo a ser apresentado é um telemóvel/Tablet*/
 @media (hover:none){
-
   figcaption{
     justify-content: center;
     text-align: center;
