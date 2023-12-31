@@ -10,9 +10,18 @@
 
   
 }
-.Sobre-Container{
-  text-align: center;
+
+.navbar {
+  width: 100%;
+  background-color: #F2F1EB;
+  color: black;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  animation: fadeIn 0.5s ease-in-out;
+  position: relative;
+  font-weight: 900;
 }
+
 
 .mySlides {
   display: none;
@@ -25,6 +34,7 @@
   width:170px;
   height:170px;
   box-shadow: 1px 3px 15px #000000;
+  margin-bottom: 100px;
 }
 
 .Sobre-Left img{
@@ -33,9 +43,9 @@
   width:170px;
   height:170px;
   box-shadow: 1px 3px 15px #000000;
+  margin-bottom: 90px;
   
 }
-
 
 .Sobre-Right-txt{
   margin: 40px;
@@ -45,7 +55,10 @@
   margin-top: 30px;
   margin-left: 10px;
   text-shadow: 1px 1px 75px #000000;
+  
 }
+
+
 .Sobre-Left img:hover{
 border: 1px solid #777;
 box-shadow: 0 0 15px black;
@@ -99,8 +112,17 @@ h3 {
 
 }
 
+.Sobre-Container{
+  margin-top: 50px;
+  font-size: 40px;
+  text-align: center;
+  text-decoration: underline;
+}
 
-h2{
+.Sobre-Container-left{
+  padding-top: 0px;
+  margin-top: 30px;
+  font-size: 40px;
   text-align: center;
   text-decoration: underline;
 }
@@ -144,6 +166,41 @@ h2{
 }
 
 
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #0b0b04;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #c6190d;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #F2F1EB;
+  padding: 20px;
+}
+
+
+
+
+
+/*
 .container-image {
   width: 100%;
   display: flex;
