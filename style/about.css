@@ -3,87 +3,57 @@
 }
 
 /* Slideshow container */
-.slideshow-container {
-  position: relative;
-  margin: auto;
-  width: 100%;
-
-  
-}
-
-.navbar {
-  width: 100%;
-  background-color: #F2F1EB;
-  color: black;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
-  padding: 25px;
-  animation: fadeIn 0.5s ease-in-out;
-  position: relative;
-  font-weight: 900;
-}
-
-
-.mySlides {
-  display: none;
-  
-}
-
-.Sobre-Right img{
-  float: right;
-  margin: 20px;
-  width:170px;
-  height:170px;
-  box-shadow: 1px 3px 15px #000000;
-  margin-bottom: 100px;
-}
-
-.Sobre-Left img{
-  float: left;
-  margin: 20px;
-  width:170px;
-  height:170px;
-  box-shadow: 1px 3px 15px #000000;
-  margin-bottom: 90px;
-  
-}
-
-.Sobre-Right-txt{
-  margin: 40px;
-  letter-spacing: 0.1em;
-  margin-right: 10px;
-  padding-left: 50px;
-  margin-top: 30px;
-  margin-left: 10px;
-  text-shadow: 1px 1px 75px #000000;
-  
-}
-
-
-.Sobre-Left img:hover{
-border: 1px solid #777;
-box-shadow: 0 0 15px black;
-transition: all .4s ease;
-border-radius:20px;
-opacity: 0.6;
-}
-
-.Sobre-Right img:hover{
-  border: 1px solid #777;
-  box-shadow: 0 0 15px black;
-  transition: all .4s ease;
-  border-radius:20px;
-  opacity: 0.6;
+  .slideshow-container {
+    position: relative;
+    margin: auto;
+    width: 100%;
+  }
+  .mySlides {
+    display: none;
+    
   }
 
-.Sobre-Left-txt{
-  margin: 40px;
-  margin-right: 10px;
-  margin-left: 10px;
-  letter-spacing: 0.1em;
-  padding-left: 50px;
-  margin-top: 30px;
-  text-shadow: 1px 1px 75px #000000;
-}
+/*About Us*/
+  .About-Container{
+    width: auto;
+    height: auto;
+    margin: 1rem;
+  }
+  .About-Container h2{
+    width: 100%;
+    text-align: center;
+  }
+  .About-content{
+    padding: 1rem;
+    margin: 20px;
+    display: grid;
+    grid-auto-flow: row dense;
+  }
+  .About-image{
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+  }
+  .About-image img{
+    width:250px;
+    height:250px;
+    box-shadow: 4px 3px 15px #000000;
+    border-radius:20px;
+    
+  }
+  .About-txt{
+    width: 100%;
+    letter-spacing: 0.1em;
+    text-shadow: 1px 1px 75px #000000;
+  }
+
+  @media (min-width: 600px) {
+    .About-content { 
+      grid-template-columns: 1fr 2fr;
+    }
+  }
 
 i{
   font-size: 12px;
