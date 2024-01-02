@@ -87,14 +87,14 @@ body
 
 /*Estilo Rodapé*/
 footer {
-    position:  relative; 
+    position:static;
     text-align: center;
     width: 100%;
-    bottom: 0;
+    bottom: 0px;
     color: black;
     font-weight: bold;
     background-color: #F2F1EB;
-    height: 150px;
+    height: 100px;
 }
 
 .footer-info p {
