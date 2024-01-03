@@ -91,14 +91,78 @@ footer {
     text-align: center;
     width: 100%;
     bottom: 0px;
-    color: black;
+    color: rgb(237, 232, 232);
     font-weight: bold;
     background-color: #F2F1EB;
-    height: 100px;
+    box-shadow: 0 -3px 10px 3px rgba(0, 0, 0, 0.2);
 }
-
+/*Estilo Rodapé de P*/
 .footer-info p {
     justify-content: center;
     align-items: center;
     text-align: center;
 }
+/*class footer info*/
+.footer-info {
+    padding:40px 0;
+    background-color:#181717b9;
+    color:#beb3b392;
+  }
+  /*class footer ul*/
+  .footer-info ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+    color: #F2F1EB;
+  }
+   /*class footer li*/
+  .footer-info li {
+    padding:0 10px;
+  }
+  /*class footer ul + a*/
+  .footer-info ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+    /*class footer ul + a hover*/
+  .footer-info ul a:hover {
+    opacity:1;
+  }
+  
+
+  /*class for class social*/
+  .footer-info .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  .social img{
+    width: 40px;
+  }
+  
+  .footer-info .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-info .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-info .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+  }
