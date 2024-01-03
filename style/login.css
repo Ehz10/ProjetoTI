@@ -1,8 +1,12 @@
 /*Backgroud image*/
+
 .backgroud_image{
     background-image: url(/imgs/view.jpg);
+   height: 900px;
     background-size: cover;
 }
+
+
 /*Container of login*/
 .container_login {
     display: flex;
