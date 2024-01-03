@@ -104,7 +104,7 @@ footer {
 }
 /*class footer info*/
 .footer-info {
-    padding:40px 100px;
+    padding: 2rem;
     background-color:#181717b9;
     color:#beb3b392;
   }
@@ -138,6 +138,7 @@ footer {
   .footer-info .social {
     text-align:center;
     padding-bottom:25px;
+    width: 100%;
   }
   .social img{
     width: 40px;
