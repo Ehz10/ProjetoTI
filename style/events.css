@@ -34,6 +34,7 @@
     margin: 0;
     position: relative;
     overflow: hidden;
+    border: 2px solid rgba(0, 0, 0, 0.699);
   }
 /*Este estilo apenas aparece quando o despositivo a ser apresentado é um telemóvel/Tablet*/
 @media (hover:none){
