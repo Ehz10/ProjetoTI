@@ -1,9 +1,14 @@
+main{
+    justify-content: center;
+    display: flex;
+    background-image: url(/imgs/view.jpg);
+    background-size: cover;
+    margin-bottom: 0;
+}
 /*Backgroud image*/
 
 .backgroud_image{
-    background-image: url(/imgs/view.jpg);
-   height: 900px;
-    background-size: cover;
+    
 }
 
 
