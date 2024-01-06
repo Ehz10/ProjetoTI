@@ -1,4 +1,4 @@
-@media (min-width: 800px){
+@media (min-width: 900px){
     section{
         width: 100%;
         position: relative;
@@ -24,9 +24,9 @@
     .event_image{
         padding: 1rem;
         margin: 20px;
-        text-align: left;
+        text-align: center;
         grid-column-start: 1;
-        grid-column-end: 2;
+        grid-column-end: 3;
         grid-row-start: 2;
         grid-row-end: 4;
     }
@@ -41,12 +41,13 @@
         text-align: left;
         padding: 1rem;
         margin: 20px;
-        grid-column-start: 2;
+        grid-column-start: 3;
         grid-column-end: 4;
         grid-row-start: 2;
         grid-row-end: 4;
     }
     .event_content ul{
+        margin-top: 150px;
         list-style: none;
         padding: 0;
     }
@@ -55,7 +56,9 @@
     }
     .event_description{
         padding: 1rem;
-        margin: 25px;
+        margin: 100px;
+        margin-top: 25px;
+        margin-bottom: 25px;
         text-align: center;
         justify-content: center;
         grid-column-start: 1;
@@ -76,7 +79,7 @@
         grid-row-end: 5;
     }
 }
-@media (max-width: 800px){
+@media (max-width: 900px){
     section{
         width: 100%;
         position: relative;
