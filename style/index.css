@@ -199,6 +199,13 @@ audio {
     .section-button{
         padding: 1rem;
         margin: 0;
+        justify-content: center;
+        text-align: center;
+    }
+    .button-more{
+        border-radius: 10px;
+        width: 100px;
+        height: 40px;
     }
 
     /*Este estilo apenas aparece quando o despositivo a ser apresentado é um telemóvel/Tablet*/
