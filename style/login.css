@@ -5,19 +5,13 @@ main{
     background-size: cover;
     margin-bottom: 0;
 }
-/*Backgroud image*/
-
-.backgroud_image{
-    
-}
-
 
 /*Container of login*/
 .container_login {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 /*Forms*/
 Form {
@@ -85,3 +79,4 @@ input {
         margin-bottom: 0;
     }
 }
+
