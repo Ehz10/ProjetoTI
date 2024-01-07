@@ -23,6 +23,7 @@ audio {
     /*Container*/
     main{
         margin-top: 40px;
+        padding: 2rem;
     }
     .main-title{
         text-align: center;
@@ -191,6 +192,15 @@ audio {
         position: relative;
         overflow: hidden;
     }
+/*Butão Ver mais Eventos*/
+    .div-button{
+        width: 100%;
+    }
+    .section-button{
+        padding: 1rem;
+        margin: 0;
+    }
+
     /*Este estilo apenas aparece quando o despositivo a ser apresentado é um telemóvel/Tablet*/
     @media (hover:none){
         section ul{
