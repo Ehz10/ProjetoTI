@@ -200,6 +200,13 @@ audio {
         padding: 1rem;
         margin: 0;
         text-align: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .button-more{
+        border-radius: 10px;
+        width: 100px;
+        height: 40px;
     }
     .section-button a{
         text-decoration: none;
