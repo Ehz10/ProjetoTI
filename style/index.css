@@ -199,6 +199,7 @@ audio {
     .section-button{
         padding: 1rem;
         margin: 0;
+        text-align: center;
         justify-content: center;
         text-align: center;
     }
@@ -207,12 +208,28 @@ audio {
         width: 100px;
         height: 40px;
     }
+    .section-button a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .button-more{
+        width: 100px;
+        height: 40px;
+        border-radius: 15px;
+        background-color: #F2F1EB;
+        cursor: pointer;
+    }
+    
 
     /*Este estilo apenas aparece quando o despositivo a ser apresentado é um telemóvel/Tablet*/
     @media (hover:none){
-        section ul{
-            padding: 0;
+        .gallery ul{
+            padding: 1;
             margin: 0;
+        }
+        .gallery li{
+            width: auto;
         }
         a{
             text-decoration: none;
@@ -227,8 +244,8 @@ audio {
         }
         figure img{
             border-radius: 15px 15px 0px 0px;
-            width: 100%;
-            height: 100%;
+            width: auto;
+            height: auto;
         }
         figcaption{
             background-color: rgb(51, 51, 51);
@@ -237,6 +254,9 @@ audio {
             color: white;
             font-size: 30px;
             border-radius: 0px 0px 15px 15px;
+        }
+        .div-button{
+            width: 100%;
         }
     }
     /*Este estilo apenas aparece quando o despositivo a ser apresentado é um computador*/
