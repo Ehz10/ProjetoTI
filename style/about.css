@@ -2,42 +2,29 @@
   box-sizing: border-box
 }
 
-/* Slideshow container */
-.slideshow-container {
-  position: relative;
-  margin: auto;
-  width: 100%;
-}
-
-/* Slides */
-.mySlides {
-  display: none;
-
-}
-
-/*Image Slides*/
-.mySlides img {
-  display: block;
-  box-shadow: 1px 3px 15px #000000;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-.backgroud_image {
-  background-image: url(/imgs/cloud.jpeg);
-  background-size: cover;
+.AboutUs{
+  margin-top: 30px;
+  margin-bottom: 130px;
 }
 
 /* Images Left */
 .Sobre-Left img {
-  float: left;
-  margin: 20px;
-  width: 170px;
-  height: 170px;
-  box-shadow: 1px 3px 15px #000000;
-  margin-bottom: 90px;
+  justify-content: center;
+  top: 160px;
+  left:50%;
+  width: 250px;
+  height: 250px;
+  box-shadow: 5px 6px 25px #000000;
+  transform: translate(-50%,-50%);
+  position: relative;
+  --s: 20px;  /* size of the frame */
+  --b: 3px;   /* border thickness */
+  --w: 250px; /* width of the image */
+  --c: #000000;
+  outline: calc(var(--w)/2) solid #0009;
+  outline-offset: calc(var(--w)/-2 - 2*var(--s));
+  transition: .4s;
+  cursor: pointer;
 
 }
 
@@ -69,13 +56,13 @@ hr {
   transition: all .4s ease;
   border-radius: 20px;
   opacity: 0.8;
+  filter: grayscale(0%);
+  outline: var(--b) solid var(--c);
+  outline-offset: calc(var(--s)/-2);
+  --_i: calc(100% - 2*var(--s));
+  box-shadow: 1px 3px 5px #000000;
 }
 
-.mySlides img:hover {
-  box-shadow: 0 0 20px black;
-  transition: all .4s ease;
-  opacity: 70%;
-}
 
 
 .Sobre-Left-txt {
@@ -88,35 +75,9 @@ hr {
 }
 
 i {
-  font-size: 12px;
+  margin-left: 30%;
+  font-size: 15px;
 }
-
-/* On bigger screens, increase text size */
-@media only screen and (min-width: 950px) {
-  .Sobre-Left img {
-    width: 250px
-  }
-
-  .Sobre-Left img {
-    height: 250px
-  }
-
-  .Sobre-Left-txt {
-    font-size: 20px
-  }
-
-  .Sobre-Right-txt {
-    font-size: 20px
-  }
-
-  i {
-    font-size: 17px
-  }
-  .mySlides figcaption {
-    font-size: 10px;
-  }
-}
-
 
 /* H3 definition */
 h3 {
@@ -131,78 +92,80 @@ h3 {
   text-shadow: 0 0 0 15px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
-
+.Sobre-Container-txt{
+  display: inline-block;
+  text-align: center;
+  margin-left: 40%;
+}
 /*Container of Sobre*/
 .Sobre-Container {
-  font-size: 40px;
+  font-size: 25px;
   text-align: center;
   font-weight: bold;
   margin-top: 2px;
-  text-shadow: 1px 1px 30px rgba(0, 0, 0, 0.8);
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid rgb(0, 0, 0); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3s steps(9),
+    blink-caret .5s step-end infinite;
 }
 
-/*Dots*/
-.dots {
-  margin-top: 10px;
-  text-align: center;
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
 
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(0, 0, 0); }
 }
 
-.active {
-  background-color: #717171;
-}
-
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-@keyframes fade {
-  from {
-    opacity: .4
-  }
-
-  to {
-    opacity: 1
-  }
-}
 
 /* On bigger screens, increase text size */
-@media only screen and (min-width: 850px) {
- 
+@media only screen and (min-width: 950px) {
+  .AboutUs{
+    margin-top: 30px;
 
-  h3 {
-    font-size: 60px
   }
 
-  .dots {
-    margin-top: 10px;
+
+  
+  .Sobre-Container {
+    font-size: 70px;
   }
 
-  .mySlides img {
-    width: 90%;
+  .Sobre-Left img {
+    width: 400px;
+    height: 400px;
+    top: 300px;
+    margin-bottom: 30px;
+    --s: 40px;  /* size of the frame */
+  --b: 10px;   /* border thickness */
+  --w: 400px; /* width of the image */
+  box-shadow: 10px 15px 25px #000000;
   }
+
+  .Sobre-Left-txt {
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 4%;
+  }
+
+  .Sobre-Right-txt {
+    font-size: 20px;
+  }
+
+  i {
+    font-size: 18px;
+    margin-left: 45%;
+  }
+
 }
 
 
-/*Figcation */
-.mySlides figcaption {
-  font-weight: bold;
-  font-size: 25px;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-  color: rgb(0, 0, 0);
-}
+
+
