@@ -1,10 +1,10 @@
 * {
   box-sizing: border-box
+  
 }
 
 .AboutUs{
-  margin-top: 30px;
-  margin-bottom: 130px;
+  margin-top: 5%;
 }
 
 /* Images Left */
@@ -41,13 +41,7 @@
 }
 
 
-hr {
-  width: 100%;
-  text-align: left;
-  margin-left: 0;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
+
 
 /* Images Left hover */
 .Sobre-Left img:hover {
@@ -125,6 +119,76 @@ h3 {
 }
 
 
+
+.team-member {
+  width: 30%;
+  padding: 0 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color:  rgba(128, 128, 128, 0.834);
+  border-radius: 10%;
+  background-image: url(/imgs/cloud.jpeg);
+    background-size: cover;
+
+}
+
+
+
+.team-member img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+filter:grayscale(2);
+  opacity: 80%;
+  transition: 0.6s;
+
+
+}
+
+.team-member img:hover {
+  width: 120%;
+  opacity: 100%;
+  filter:grayscale(0);
+}
+
+.team-member h2 {
+  font-size: 1.5em;
+  color: black
+}
+
+.team-member p {
+  font-size: 1em;
+  color: black
+}
+
+.team-member a {
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.title {
+  color: grey;
+}
+
+
+
+
+
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 24px;
+}
+
+.team {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 24px;
+  margin-top: 30px;
+}
+
+
+
 /* On bigger screens, increase text size */
 @media only screen and (min-width: 950px) {
   .AboutUs{
@@ -164,8 +228,32 @@ h3 {
     margin-left: 45%;
   }
 
+  .team-member img {
+    width: 60%;
+    margin-left: 20%;
+    --w: 136px; /* half the image size */
+  }
+
+  .team-member {
+    width: 25%;
+  }
+  
+  .team-member img:hover {
+    width: 70%;
+    opacity: 100%;
+  }
+
+  .team-member h2 {
+    font-size: 3em;
+  }
+  
+  .team-member p {
+    font-size: 2em;
+  
+  }
+
+
+
 }
-
-
 
 
