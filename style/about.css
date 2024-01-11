@@ -2,7 +2,7 @@
   box-sizing: border-box
   
 }
-
+/* Class About us */
 .AboutUs{
   margin-top: 5%;
 }
@@ -46,7 +46,6 @@
 /* Images Left hover */
 .Sobre-Left img:hover {
   border: 1px solid #777;
-  box-shadow: 0 0 15px black;
   transition: all .4s ease;
   border-radius: 20px;
   opacity: 0.8;
@@ -58,7 +57,7 @@
 }
 
 
-
+/* Sobre-Left-txt */
 .Sobre-Left-txt {
   margin: 40px;
   margin-right: 10px;
@@ -67,7 +66,7 @@
   padding-left: 50px;
   text-shadow: 1px 1px 75px #000000;
 }
-
+/* I definition */
 i {
   margin-left: 30%;
   font-size: 15px;
@@ -86,6 +85,7 @@ h3 {
   text-shadow: 0 0 0 15px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
+/*Class Sobre-Container-txt*/
 .Sobre-Container-txt{
   display: inline-block;
   text-align: center;
@@ -119,7 +119,7 @@ h3 {
 }
 
 
-
+/* Class Team member  */
 .team-member {
   width: 30%;
   padding: 0 16px;
@@ -132,7 +132,7 @@ h3 {
 }
 
 
-
+/* Class Team member Image  */
 .team-member img {
   width: 100%;
   border-radius: 50%;
@@ -143,29 +143,29 @@ filter:grayscale(2);
 
 
 }
-
+/* Class Team member Image hover  */
 .team-member img:hover {
   width: 120%;
   opacity: 100%;
   filter:grayscale(0);
 }
-
+/* Class Team member h2 */
 .team-member h2 {
   font-size: 1.5em;
   color: black
 }
-
+/* Class Team member p  */
 .team-member p {
   font-size: 1em;
   color: black
 }
-
+/* Class Team member a */
 .team-member a {
   text-decoration: none;
   padding: 8px;
   border-radius: 5px;
 }
-
+/* Class Team member title  */
 .title {
   color: grey;
 }
