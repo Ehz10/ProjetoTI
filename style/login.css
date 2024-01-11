@@ -1,9 +1,7 @@
 /*Main*/
 main{
- 
-    background-image: url(/imgs/view.jpg);
-    background-size: cover;
-    
+  background-image: url(/imgs/view.jpg);
+    background-size: cover; 
 }
 
 /*Container of login*/
@@ -75,6 +73,7 @@ input {
     cursor: pointer;
     width: 100%;
     box-shadow: 0 0 1px black;
+    transition: 1s;
 }
 /*Button of submit hover*/
 #Button_submit:hover{

@@ -1,23 +1,29 @@
   main{
     justify-content: center;
     display: flex;
-    background-image: url(/imgs/cloud.jpeg);
+    background-image: url(/imgs/view.jpg);
     background-size: cover;
     margin-bottom: 0;
   }
   .contact-content{
-    width: 80%;
-    margin-top: 30px;
+    width: 70%;
     text-align: left;
-    padding: 10rem;
+    padding: 10rem; 
+    background-color: #00000065;
+    box-shadow: rgba(252, 254, 255, 0.3) 0px 1px 2px 0px, rgba(255, 255, 255, 0.15) 0px 2px 6px 2px;
   }
+  
   .contact-title{
+    color: #ffffff;
     font-size: 55px;
     text-align: center; 
     font-weight: bold;
     margin-top: 2px;
     text-shadow: 1px 1px 30px rgba(0, 0, 0, 0.8);
+    
   }
+
+  
   /*Text area of Contact us */
   input[type=text], select, textarea {
     width: 100%;
@@ -31,15 +37,18 @@
     box-shadow: 0 1px 5px black;
     
   }
+
+
   
   /*Button submit */
   input[type=submit] {
-    background-color: #0b0b04;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(251, 7, 7);
     padding: 12px 20px;
     border: none;
     border-radius: 20px;
     cursor: pointer;
+    transition: 1s;
   }
   /*Button Submit hover */
   input[type=submit]:hover {
@@ -47,12 +56,14 @@
     opacity: 1;
     transition: 1s;
     box-shadow: 0 0 10px black;
+    color: rgb(255, 255, 255);
   }
   .send-submit{
     text-align: center;
   }
   label{
     font-weight: bold;
+    color: #ffffffe1;
   }
 @media (max-width: 1000px) {
   .contact-content{
@@ -63,3 +74,4 @@
     padding: 1rem;
   }
 }
+

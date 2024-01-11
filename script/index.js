@@ -39,3 +39,6 @@
       showCard(newIndex);
       setActivePointer(newIndex);
     });
+
+
+  
