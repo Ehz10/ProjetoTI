@@ -211,54 +211,66 @@ audio {
     .section-button a{
         text-decoration: none;
         color: black;
-    }
-
-    .button-more{
-        width: 100px;
-        height: 40px;
+    }.gallery{
+        padding: 1rem;
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      figure img{
+        width: 100%;
+        display: block;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        transition: transform 1000ms;
+      }
+      section ul{
+        list-style: none; /*Isto remove o ponto da lista*/
+        margin: 0;
+        padding: 1rem;
+        display: grid;
+        gap: 0.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(20rem/*Tamanho da imagem*/, 1fr)); /*Mostrar a lista em grelha*/
+        max-width: 100%;
+        width: 70rem;
+      }
+      figure{
         border-radius: 15px;
-        background-color: #F2F1EB;
-        cursor: pointer;
-    }
-    
-
+        margin: 0;
+        position: relative;
+        overflow: hidden;
+        border: 2px solid rgba(0, 0, 0, 0.699);
+      }
     /*Este estilo apenas aparece quando o despositivo a ser apresentado é um telemóvel/Tablet*/
     @media (hover:none){
-        .gallery ul{
-            padding: 1;
-            margin: 0;
-        }
-        .gallery li{
-            width: auto;
-        }
-        a{
-            text-decoration: none;
-        }
-        figure{
-            padding: 1rem;
-            margin: 20px;
-            border: 0;
-            border-radius: 15px;
-            box-shadow: 15px 10px 10px grey;
-            background-color: #353535;
-        }
-        figure img{
-            border-radius: 15px 15px 0px 0px;
-            width: auto;
-            height: auto;
-        }
-        figcaption{
-            background-color: rgb(51, 51, 51);
-            text-align: center;
-            text-decoration: none;
-            color: white;
-            font-size: 30px;
-            border-radius: 0px 0px 15px 15px;
-        }
-        .div-button{
-            width: 100%;
-        }
+      
+      a{
+        text-decoration: none;
+      }
+      figure{
+        padding: 1rem;
+        margin: 20px;
+        border-radius: 15px;
+        box-shadow: 15px 10px 10px grey;
+        background-color: #353535;
+      }
+      figure img{
+        border-radius: 15px 15px 0px 0px;
+        width: 100%;
+        height: 100%;
+      }
+      figcaption{
+        background-color: rgb(51, 51, 51);
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-size: 30px;
+        border-radius: 0px 0px 15px 15px;
+      }
     }
+    
     /*Este estilo apenas aparece quando o despositivo a ser apresentado é um computador*/
     @media (hover:hover){
     /*Criar o background para quando o cursor passa por cima das imagens*/
