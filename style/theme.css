@@ -187,3 +187,14 @@ footer {
     color:#aaa;
     margin-bottom:0;
   }
+
+  .name_titulo {
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    font-size: 120px;
+    margin: 10px 0;
+  }

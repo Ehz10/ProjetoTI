@@ -1,98 +1,108 @@
 <!DOCTYPE html>
 <html lang="pt">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Make Memories</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="style/login.css">
-        <link rel="stylesheet" type="text/css" href="style/theme.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Memories</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style/login.css">
+    <link rel="stylesheet" type="text/css" href="style/theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
-    <body>
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-            <div class="container px-4 px-lg-5">
-                <div class="logo">
-                    <img src="imgs/logopng.png" width="90px" height="50px" class="logo-image" alt="Logo">
-                </div>
-                <h1>Make Memories</h1>
-                <div class="container-button navbar-toggler navbar-toggler-right" onclick="switchBurguer(this)" data-bs-toggle="collapse"
-                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
-                        <li class="nav-item"><a class="nav-link" href="events.html">Eventos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">Sobre</a></li>
-                        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contacte-nos</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
 
-        
-        <main>
-            <!--Login-->
-            <div class="container_login backgroud_image">
-                <form id="loginForm" action="/ActionLogin.html">
-                    <h2>Entrar</h2>
-                    <label>Utilizador:</label>
-                    <input type="text" name="loginUsername" required placeholder="Utilizador">
-        
-                    <label>Password:</label>
-                    <input type="password" id="loginPassword" name="loginPassword" required placeholder="Password">
-        
-                    <button id="Button_submit"type="submit">Entrar</button>
-                </form>
-                <hr>
-                <!--Register-->
-                <form id="registerForm" action="/ActionLogin.html">
-                    <h2>Registo</h2>
-                    <label>Email:</label>
-                    <input type="text" name="registerEmail" required placeholder="email@hotmail.com">
-                    <label>Utilizador:</label>
-                    <input type="text" name="registerUsername" required placeholder="Utilizador">
-        
-                    <label>Password:</label>
-                    <input type="password" name="registerPassword" required placeholder="Password">
-                    <button id="Button_submit" type="submit">Registar</button>
-                </form>
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <div class="logo">
+                <img src="imgs/logopng.png" width="90px" height="50px" class="logo-image" alt="Logo">
             </div>
-        </main>
-        <footer>
-            <!--Footer-->
-            <div class="footer-info">
-                <!--Social-->
-                <div class="social">
+            <h1 class="name_titulo">Make Memories</h1>
+            <div class="container-button navbar-toggler navbar-toggler-right" onclick="switchBurguer(this)"
+                data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Eventos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contacte-nos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+
+
+        <div class="container_login animate__animated animate__bounce" >
+            <!--Login-->
+           
+            <input type='checkbox' id='form-switch'>
+            <form id="loginForm" action="/ActionLogin.html" method='post' >
+                <h2>Entrar</h2>
+                <label>Utilizador:</label>
+                <input type="text" name="loginUsername" required placeholder="Utilizador">
+                <label>Password:</label>
+                <input type="password" id="loginPassword" name="loginPassword" required placeholder="Password">
+                <button id="Button_submit" type="submit">Entrar</button>
+                <label for='form-switch'><span>Clique aqui para fazer o seu Registro!</span></label>
+            </form>
+        
+
+            <!--Register-->
+            
+            <form id="registerForm" action="/ActionLogin.html" method='post'>
+                <h2>Registo</h2>
+                <label>Email:</label>
+                <input type="text" name="registerEmail" required placeholder="email@hotmail.com">
+                <label>Utilizador:</label>
+                <input type="text" name="registerUsername" required placeholder="Utilizador">
+
+                <label>Password:</label>
+                <input type="password" name="registerPassword" required placeholder="Password">
+                <button id="Button_submit" type="submit">Registar</button>
+                <label for='form-switch'>Entre na sua conta!</label>
+            </form>
+        </div>
+    <footer>
+        
+        <!--Footer-->
+        <div class="footer-info">
+            <!--Social-->
+            <div class="social">
                 <a href="#"><img src="imgs/linkedin.png" alt="linkedin"></a>
                 <a href="#"><img src="imgs/whatsapp.png" alt="Whatsapp"></a>
                 <a href="#"><img src="imgs/facebook.png" alt="Facebook"></a>
                 <a href="#"><img src="imgs/youtube.png" alt="Youtube"></i></a>
             </div>
-            
-         
+
+
             <!--Pages-->
-                <ul class="list-inline">
-                    <li class="list-inline-item"><a href="index.html">Início</a></li>
-                    <li class="list-inline-item"><a href="events.html">Eventos</a></li>
-                    <li class="list-inline-item"><a href="about.html">Sobre</a></li>
-                    <li class="list-inline-item"><a href="login.html">Login</a></li>
-                    <li class="list-inline-item"><a href="contact.html">Contacte-nos</a></li>
-                </ul>
-                <p class="copyright">Make Memories © 2024</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="index.html">Início</a></li>
+                <li class="list-inline-item"><a href="events.html">Eventos</a></li>
+                <li class="list-inline-item"><a href="about.html">Sobre</a></li>
+                <li class="list-inline-item"><a href="login.html">Login</a></li>
+                <li class="list-inline-item"><a href="contact.html">Contacte-nos</a></li>
+            </ul>
+            <p class="copyright">Make Memories © 2024</p>
             <!-- Adicione elementos do rodapé aqui, como informações de contato -->
-            </div>
-        </footer>
-    </body>
-    <script src="script/theme.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </div>
+    </footer>
+</body>
+<script src="script/theme.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
     </script>
+
 </html>
+
