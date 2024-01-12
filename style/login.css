@@ -1,8 +1,7 @@
+/*Main*/
 main{
- 
-    background-image: url(/imgs/view.jpg);
-    background-size: cover;
-    
+  background-image: url(/imgs/view.jpg);
+    background-size: cover; 
 }
 
 /*Container of login*/
@@ -26,6 +25,8 @@ Form {
 
 }
 
+
+/*Label to point*/
 label {
     cursor:pointer
   }
@@ -49,6 +50,7 @@ label {
     margin-bottom: 8px;
 }
 
+/*Input*/
 input {
     width: 100%;
     padding: 8px;
@@ -56,7 +58,7 @@ input {
     box-sizing: border-box;
 }
 
-
+/*Register Form*/
 #registerForm{
     margin-bottom: 50px;
 }
@@ -71,6 +73,7 @@ input {
     cursor: pointer;
     width: 100%;
     box-shadow: 0 0 1px black;
+    transition: 1s;
 }
 /*Button of submit hover*/
 #Button_submit:hover{

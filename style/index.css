@@ -306,6 +306,8 @@ audio {
         opacity: 0;
         transition: opacity 600ms, transform 600ms;
     }
+
+  
     /*Fazer com que o background da imagem seja acionado quando o cursor passa por cima da respetiva imagem*/
     a:is(:hover, :focus) figure::after{
         opacity: 1;
@@ -324,3 +326,11 @@ audio {
         width: 100%;
     }
 }
+
+
+
+  
+
+
+
+  
