@@ -3,214 +3,166 @@
   
 }
 /* Class About us */
-.AboutUs{
-  margin-top: 5%;
-}
+  .AboutUs{
+    margin-top: 5%;
+    width: 100%;
+    text-align: center;
+  }
+  /*Container of Sobre*/
+  .Sobre-Container {
+    margin-top: 2px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(0, 0, 0); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 5s steps(9, end),
+      blink-caret .9s step-end infinite;
+  }
+  .Sobre-Container{
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+  }
+  /*Typing animation para o h1*/
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(0, 0, 0); }
+  }
+  /* I definition */
+  i {
+    margin-left: 30%;
+    font-size: 15px;
+  }
+  /* Sobre-Left-txt */
+  .Sobre-Left-txt {
+    margin: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+    letter-spacing: 0.1em;
+    padding-left: 50px;
+    text-shadow: 1px 1px 75px #000000;
+  }
+  /* Right text */
+  .Sobre-Right-txt {
+    margin: 40px;
+    letter-spacing: 0.1em;
+    margin-right: 10px;
+    padding-left: 50px;
+    margin-top: 30px;
+    margin-left: 10px;
+    text-shadow: 1px 1px 75px #000000;
+  }
 
-/* Images Left */
-.Sobre-Left img {
-  justify-content: center;
-  top: 160px;
-  left:50%;
-  width: 250px;
-  height: 250px;
-  box-shadow: 5px 6px 25px #000000;
-  transform: translate(-50%,-50%);
-  position: relative;
-  --s: 20px;  /* size of the frame */
-  --b: 3px;   /* border thickness */
-  --w: 250px; /* width of the image */
-  --c: #000000;
-  outline: calc(var(--w)/2) solid #0009;
-  outline-offset: calc(var(--w)/-2 - 2*var(--s));
-  transition: .4s;
-  cursor: pointer;
+/*Team*/
+  .team {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 24px;
+    margin-top: 30px;
+  }
 
-}
-
-/* Right text */
-.Sobre-Right-txt {
-  margin: 40px;
-  letter-spacing: 0.1em;
-  margin-right: 10px;
-  padding-left: 50px;
-  margin-top: 30px;
-  margin-left: 10px;
-  text-shadow: 1px 1px 75px #000000;
-
-}
-
-
-
-
-/* Images Left hover */
-.Sobre-Left img:hover {
-  border: 1px solid #777;
-  transition: all .4s ease;
-  border-radius: 20px;
-  opacity: 0.8;
-  filter: grayscale(0%);
-  outline: var(--b) solid var(--c);
-  outline-offset: calc(var(--s)/-2);
-  --_i: calc(100% - 2*var(--s));
-  box-shadow: 1px 3px 5px #000000;
-}
-
-
-/* Sobre-Left-txt */
-.Sobre-Left-txt {
-  margin: 40px;
-  margin-right: 10px;
-  margin-left: 10px;
-  letter-spacing: 0.1em;
-  padding-left: 50px;
-  text-shadow: 1px 1px 75px #000000;
-}
-/* I definition */
-i {
-  margin-left: 30%;
-  font-size: 15px;
-}
-
-/* H3 definition */
-h3 {
-  color: #000000;
-  font-size: 20px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  text-align: center;
-  font-weight: bold;
-  text-shadow: 0 0 0 15px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-}
-/*Class Sobre-Container-txt*/
-.Sobre-Container-txt{
-  display: inline-block;
-  text-align: center;
-  margin-left: 40%;
-}
-/*Container of Sobre*/
-.Sobre-Container {
-  font-size: 25px;
-  text-align: center;
-  font-weight: bold;
-  margin-top: 2px;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid rgb(0, 0, 0); /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3s steps(9),
-    blink-caret .5s step-end infinite;
-}
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: rgb(0, 0, 0); }
-}
-
-
-/* Class Team member  */
-.team-member {
-  width: 30%;
-  padding: 0 16px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color:  rgba(128, 128, 128, 0.834);
-  border-radius: 10%;
-  background-image: url(/imgs/cloud.jpeg);
+  /* Class Team member  */
+  .team-member {
+    width: 30%;
+    padding: 0 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color:  #353535;
+    border-radius: 10%;
+    background-image: url(imgs/cloud.jpeg);
     background-size: cover;
-
-}
-
-
-/* Class Team member Image  */
-.team-member img {
-  width: 100%;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-filter:grayscale(2);
-  opacity: 80%;
-  transition: 0.6s;
-
-
-}
-/* Class Team member Image hover  */
-.team-member img:hover {
-  width: 120%;
-  opacity: 100%;
-  filter:grayscale(0);
-}
-/* Class Team member h2 */
-.team-member h2 {
-  font-size: 1.5em;
-  color: black
-}
-/* Class Team member p  */
-.team-member p {
-  font-size: 1em;
-  color: black
-}
-/* Class Team member a */
-.team-member a {
-  text-decoration: none;
-  padding: 8px;
-  border-radius: 5px;
-}
-/* Class Team member title  */
-.title {
-  color: grey;
-}
-
-
-
-
-
-
-h1 {
-  font-size: 2em;
-  margin-bottom: 24px;
-}
-
-.team {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 24px;
-  margin-top: 30px;
-}
-
-
-
+  }
+  /* Class Team member Image  */
+  .team-member img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;  
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    opacity: 80%;
+    transition: 0.6s;
+  }
+  /* Class Team member Image hover  */
+  .team-member img:hover {
+    width: 100%;
+    opacity: 100%;
+    filter:grayscale(0);
+  }
+  /* Class Team member h2 */
+  .team-member h2 {
+    font-size: 1.5em;
+    color: white;
+  }
+  /* Class Team member p  */
+  .team-member p {
+    font-size: 1em;
+    color: black;
+  }
+  /* Class Team member a */
+  .team-member a {
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+  }
+  /*Team div para dispositivos móveis*/
+  @media (hover:none){
+    .AboutUs{
+      width: 100%;
+      padding: 1rem;
+      margin: 5px;
+      text-align: center;
+    }
+    i{
+      margin: 0;
+      padding: 0;
+    }
+    .Sobre-Left-txt{
+      margin: 0;
+      padding: 1rem;
+      width: 100%;
+      text-align: center;
+    }
+    .Sobre-Right-txt{
+      margin: 0;
+      padding: 1rem;
+      width: 100%;
+      text-align: center;
+    }
+    .team{
+      width: 100%;
+      padding: 1rem;
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(20rem/*Tamanho da imagem*/, 1fr)); /*Mostrar a lista em grelha*/
+      max-width: 100%;
+      width: 100%;
+    }
+    .team-member{
+      width: 100%;
+    }
+    .team-member img{
+      margin-top: 20px;
+      margin-bottom: 20px;
+      filter: grayscale(0);
+    }
+    .team-member h2{
+      text-align: center;
+    }
+  }
 /* On bigger screens, increase text size */
 @media only screen and (min-width: 950px) {
   .AboutUs{
     margin-top: 30px;
 
   }
-
-
-  
   .Sobre-Container {
     font-size: 70px;
-  }
-
-  .Sobre-Left img {
-    width: 400px;
-    height: 400px;
-    top: 300px;
-    margin-bottom: 30px;
-    --s: 40px;  /* size of the frame */
-  --b: 10px;   /* border thickness */
-  --w: 400px; /* width of the image */
-  box-shadow: 10px 15px 25px #000000;
   }
 
   .Sobre-Left-txt {
@@ -228,20 +180,6 @@ h1 {
     margin-left: 45%;
   }
 
-  .team-member img {
-    width: 60%;
-    margin-left: 20%;
-    --w: 136px; /* half the image size */
-  }
-
-  .team-member {
-    width: 25%;
-  }
-  
-  .team-member img:hover {
-    width: 70%;
-    opacity: 100%;
-  }
 
   .team-member h2 {
     font-size: 3em;
@@ -251,9 +189,6 @@ h1 {
     font-size: 2em;
   
   }
-
-
-
 }
 
 
