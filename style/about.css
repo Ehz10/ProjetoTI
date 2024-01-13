@@ -9,7 +9,7 @@
     text-align: center;
   }
   /*Container of Sobre*/
-  .Sobre-Container {
+  .Sobre-Title {
     margin-top: 2px;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid rgb(0, 0, 0); /* The typwriter cursor */
@@ -20,24 +20,28 @@
       typing 5s steps(9, end),
       blink-caret .9s step-end infinite;
   }
-  .Sobre-Container{
-    font-size: 40px;
+  .Sobre-Title{
+    font-size: 70px;
     text-align: center;
     font-weight: bold;
   }
-  /*Typing animation para o h1*/
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+  .Sobre-Content{
+    width: 100%;
+    text-align: center;
   }
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: rgb(0, 0, 0); }
-  }
+    /*Typing animation para o h1*/
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: rgb(0, 0, 0); }
+    }
   /* I definition */
   i {
-    margin-left: 30%;
+    text-align: center;
     font-size: 15px;
   }
   /* Sobre-Left-txt */
@@ -71,7 +75,8 @@
   /* Class Team member  */
   .team-member {
     width: 30%;
-    padding: 0 16px;
+    padding: 5rem;
+    margin-left: -50px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     background-color:  #353535;
     border-radius: 10%;
@@ -155,40 +160,3 @@
       text-align: center;
     }
   }
-/* On bigger screens, increase text size */
-@media only screen and (min-width: 950px) {
-  .AboutUs{
-    margin-top: 30px;
-
-  }
-  .Sobre-Container {
-    font-size: 70px;
-  }
-
-  .Sobre-Left-txt {
-    font-size: 20px;
-    margin-right: 10px;
-    margin-top: 4%;
-  }
-
-  .Sobre-Right-txt {
-    font-size: 20px;
-  }
-
-  i {
-    font-size: 18px;
-    margin-left: 45%;
-  }
-
-
-  .team-member h2 {
-    font-size: 3em;
-  }
-  
-  .team-member p {
-    font-size: 2em;
-  
-  }
-}
-
-
