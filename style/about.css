@@ -1,171 +1,223 @@
 * {
   box-sizing: border-box
-  
 }
+
 /* Class About us */
-  .AboutUs{
-    margin-top: 5%;
-    width: 100%;
-    text-align: center;
-  }
-  /*Container of Sobre*/
-  .Sobre-Title h2{
-    margin-top: 2px;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid rgb(0, 0, 0); /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .9s step-end infinite;
-  }
-  .Sobre-Title{
-    font-size: 70px;
-    text-align: center;
-    font-weight: bold;
-  }
-  .Sobre-Content{
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-  }
-    /*Typing animation para o h1*/
-    @keyframes typing {
-      from { width: 0 }
-      to { width: 100% }
-    }
-    /* The typewriter cursor effect */
-    @keyframes blink-caret {
-      from, to { border-color: transparent }
-      50% { border-color: rgb(0, 0, 0); }
-    }
-  /* I definition */
-  i {
-    text-align: center;
-    font-size: 15px;
-  }
-  /* Sobre-Left-txt */
-  .Sobre-Left-txt {
-    margin: 40px;
-    margin-right: 10px;
-    margin-left: 10px;
-    letter-spacing: 0.1em;
-    padding-left: 50px;
-    text-shadow: 1px 1px 75px #000000;
-  }
-  /* Right text */
-  .Sobre-Right-txt {
-    margin: 40px;
-    letter-spacing: 0.1em;
-    margin-right: 10px;
-    padding-left: 50px;
-    margin-top: 30px;
-    margin-left: 10px;
-    text-shadow: 1px 1px 75px #000000;
+.AboutUs {
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+}
+
+/*Delimit the area Container of Sobre*/
+/*Purpose of this is not to go to the end of the page */
+.Wrapper {
+  display: inline-block;
+}
+/*Container of Sobre*/
+.Sobre-Title h2 {
+  margin-top: 2px;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid rgb(0, 0, 0);
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  animation:
+    typing 3.5s steps(9, end),
+    blink-caret .9s step-end infinite;
+}
+
+.Sobre-Title {
+  font-size: 70px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.Sobre-Content {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+/*Typing animation para o h1*/
+@keyframes typing {
+  from {
+    width: 0
   }
 
+  to {
+    width: 100%
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: rgb(0, 0, 0);
+  }
+}
+
+/* I definition */
+i {
+  text-align: center;
+  font-size: 15px;
+}
+
+/* Sobre-Left-txt */
+.Sobre-Left-txt {
+  margin: 40px;
+  margin-right: 10px;
+  margin-left: 10px;
+  letter-spacing: 0.1em;
+  padding-left: 50px;
+  text-shadow: 1px 1px 75px #000000;
+}
+
+/* Right text */
+.Sobre-Right-txt {
+  margin: 40px;
+  letter-spacing: 0.1em;
+  margin-right: 10px;
+  padding-left: 50px;
+  margin-top: 30px;
+  margin-left: 10px;
+  text-shadow: 1px 1px 75px #000000;
+}
+
 /*Team*/
-  .Elements{
-      padding: 1rem;
-      margin: 50px;
-      max-width: 100%;
-      height: auto;
+.Elements {
+  padding: 1rem;
+  margin: 50px;
+  max-width: 100%;
+  height: auto;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+}
+
+/* Class Team member  */
+.team ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(17rem
+        /*Tamanho da imagem*/
+        , 1fr));
+  /*Mostrar a lista em grelha*/
+  max-width: 100%;
+  width: 70rem;
+}
+
+figure {
+  background-color: rgb(51, 51, 51);
+  border-radius: 50px;
+  height: auto;
+}
+
+figure img {
+  border-radius: 50%;
+  width: 60%;
+  aspect-ratio: 1/1.5;
+}
+
+figcaption {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 35px;
+  color: white;
+}
+
+/*Team div para dispositivos móveis*/
+@media (hover:none) {
+  .AboutUs {
+    width: 100%;
+    text-align: center;
   }
+
+  i {
+    margin: 0;
+    padding: 0;
+  }
+
+  .Sobre-Left-txt {
+    margin: 0;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .Sobre-Right-txt {
+    margin: 0;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .Elements {
+    margin: 20px;
+    padding: 0;
+    text-align: center;
+  }
+
   .team {
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
-  /* Class Team member  */
-  .team ul{
-    list-style: none;
+
+  .team ul {
     padding: 0;
     margin: 0;
     display: grid;
-    gap: 3rem;
-    grid-template-columns: repeat(auto-fit, minmax(17rem/*Tamanho da imagem*/, 1fr)); /*Mostrar a lista em grelha*/
+    gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(17rem
+          /*Tamanho da imagem*/
+          , 1fr));
+    /*Mostrar a lista em grelha*/
     max-width: 100%;
     width: 70rem;
   }
-  figure{
-    background-color: rgb(51, 51, 51);
-    border-radius: 50px;
-    height: auto;
+
+  a {
+    text-decoration: none;
   }
-  figure img{
-    border-radius: 50%;
-    width: 60%;
-    aspect-ratio: 1/1.5;
+
+  figure {
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 15px 10px 10px grey;
+    background-color: #353535;
   }
-  figcaption{
+
+  figure img {
+    border-radius: 15px 15px 0px 0px;
     width: 100%;
-    height: auto;
-    margin-top: 20px; 
-    margin-bottom: 20px;
-    font-size: 35px;
+    height: 100%;
+  }
+
+  figcaption {
+    background-color: rgb(51, 51, 51);
+    text-align: center;
+    text-decoration: none;
     color: white;
+    font-size: 30px;
+    border-radius: 0px 0px 15px 15px;
   }
-  /*Team div para dispositivos móveis*/
-  @media (hover:none){
-    .AboutUs{
-      width: 100%;
-      text-align: center;
-    }
-    i{
-      margin: 0;
-      padding: 0;
-    }
-    .Sobre-Left-txt{
-      margin: 0;
-      padding: 1rem;
-      width: 100%;
-      text-align: center;
-    }
-    .Sobre-Right-txt{
-      margin: 0;
-      padding: 1rem;
-      width: 100%;
-      text-align: center;
-    }
-    .Elements{
-      margin: 20px;
-      padding: 0;
-      text-align: center;
-    }
-    .team{
-      width: 100%;
-      padding: 0;
-      margin: 0;
-    }
-    .team ul{
-      padding: 0;
-      margin: 0;
-      display: grid;
-      gap: 0.5rem;
-      grid-template-columns: repeat(auto-fit, minmax(17rem/*Tamanho da imagem*/, 1fr)); /*Mostrar a lista em grelha*/
-      max-width: 100%;
-      width: 70rem;
-    }
-    a{
-      text-decoration: none;
-    }
-    figure{
-      padding: 1rem;
-      border-radius: 15px;
-      box-shadow: 15px 10px 10px grey;
-      background-color: #353535;
-    }
-    figure img{
-      border-radius: 15px 15px 0px 0px;
-      width: 100%;
-      height: 100%;
-    }
-    figcaption{
-      background-color: rgb(51, 51, 51);
-      text-align: center;
-      text-decoration: none;
-      color: white;
-      font-size: 30px;
-      border-radius: 0px 0px 15px 15px;
-    }
-  }
+}
