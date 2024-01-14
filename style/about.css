@@ -9,7 +9,7 @@
     text-align: center;
   }
   /*Container of Sobre*/
-  .Sobre-Title {
+  .Sobre-Title h2{
     margin-top: 2px;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid rgb(0, 0, 0); /* The typwriter cursor */
@@ -17,7 +17,7 @@
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
-      typing 5s steps(9, end),
+      typing 3.5s steps(40, end),
       blink-caret .9s step-end infinite;
   }
   .Sobre-Title{
@@ -28,6 +28,7 @@
   .Sobre-Content{
     width: 100%;
     text-align: center;
+    justify-content: center;
   }
     /*Typing animation para o h1*/
     @keyframes typing {
@@ -65,62 +66,49 @@
   }
 
 /*Team*/
+  .Elements{
+      padding: 1rem;
+      margin: 50px;
+      max-width: 100%;
+      height: auto;
+  }
   .team {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 24px;
-    margin-top: 30px;
+    justify-content: center;
   }
-
   /* Class Team member  */
-  .team-member {
-    width: 30%;
-    padding: 5rem;
-    margin-left: -50px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background-color:  #353535;
-    border-radius: 10%;
-    background-image: url(imgs/cloud.jpeg);
-    background-size: cover;
+  .team ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(17rem/*Tamanho da imagem*/, 1fr)); /*Mostrar a lista em grelha*/
+    max-width: 100%;
+    width: 70rem;
   }
-  /* Class Team member Image  */
-  .team-member img {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 100%;  
+  figure{
+    background-color: rgb(51, 51, 51);
+    border-radius: 50px;
+    height: auto;
+  }
+  figure img{
     border-radius: 50%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    opacity: 80%;
-    transition: 0.6s;
+    width: 60%;
+    aspect-ratio: 1/1.5;
   }
-  /* Class Team member Image hover  */
-  .team-member img:hover {
+  figcaption{
     width: 100%;
-    opacity: 100%;
-    filter:grayscale(0);
-  }
-  /* Class Team member h2 */
-  .team-member h2 {
-    font-size: 1.5em;
+    height: auto;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    font-size: 35px;
     color: white;
-  }
-  /* Class Team member p  */
-  .team-member p {
-    font-size: 1em;
-    color: black;
-  }
-  /* Class Team member a */
-  .team-member a {
-    text-decoration: none;
-    padding: 8px;
-    border-radius: 5px;
   }
   /*Team div para dispositivos móveis*/
   @media (hover:none){
     .AboutUs{
       width: 100%;
-      padding: 1rem;
-      margin: 5px;
       text-align: center;
     }
     i{
@@ -139,24 +127,45 @@
       width: 100%;
       text-align: center;
     }
+    .Elements{
+      margin: 20px;
+      padding: 0;
+      text-align: center;
+    }
     .team{
       width: 100%;
-      padding: 1rem;
+      padding: 0;
+      margin: 0;
+    }
+    .team ul{
+      padding: 0;
+      margin: 0;
       display: grid;
-      gap: 2rem;
-      grid-template-columns: repeat(auto-fit, minmax(20rem/*Tamanho da imagem*/, 1fr)); /*Mostrar a lista em grelha*/
+      gap: 0.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(17rem/*Tamanho da imagem*/, 1fr)); /*Mostrar a lista em grelha*/
       max-width: 100%;
+      width: 70rem;
+    }
+    a{
+      text-decoration: none;
+    }
+    figure{
+      padding: 1rem;
+      border-radius: 15px;
+      box-shadow: 15px 10px 10px grey;
+      background-color: #353535;
+    }
+    figure img{
+      border-radius: 15px 15px 0px 0px;
       width: 100%;
+      height: 100%;
     }
-    .team-member{
-      width: 100%;
-    }
-    .team-member img{
-      margin-top: 20px;
-      margin-bottom: 20px;
-      filter: grayscale(0);
-    }
-    .team-member h2{
+    figcaption{
+      background-color: rgb(51, 51, 51);
       text-align: center;
+      text-decoration: none;
+      color: white;
+      font-size: 30px;
+      border-radius: 0px 0px 15px 15px;
     }
   }
