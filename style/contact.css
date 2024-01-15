@@ -1,7 +1,7 @@
   main{
     justify-content: center;
     display: flex;
-    background-image: url(/imgs/view.jpg);
+    background-image: url(imgs/view.jpg);
     background-size: cover;
     margin-bottom: 0;
   }

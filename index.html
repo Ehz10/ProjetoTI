@@ -1,171 +1,178 @@
 <!DOCTYPE html>
 <html lang="pt">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Make Memories</title>
-        <link rel="icon" type="image/x-icon" href="imgs/logopng.png">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="style/index.css">
-        <link rel="stylesheet" type="text/css" href="style/theme.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Memories</title>
+    <link rel="icon" type="image/x-icon" href="imgs/logopng.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style/index.css">
+    <link rel="stylesheet" type="text/css" href="style/theme.css">
 
-    </head>
+</head>
 
-    <body>
-            
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-           
-            <div class="container px-4 px-lg-5">
-                <div class="logo">
-                    <img src="imgs/logopng.png" width="90px" height="50px" class="logo-image" alt="Logo">
-                </div>
-                <h1 class="name_titulo">Make Memories</h1>
-                <div class="container-button navbar-toggler navbar-toggler-right" onclick="switchBurguer(this)" data-bs-toggle="collapse"
-                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
-                        <li class="nav-item"><a class="nav-link" href="events.html">Eventos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">Sobre</a></li>
-                        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contacte-nos</a></li>
-                    </ul>
-                </div>
+<body>
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+
+        <div class="container px-4 px-lg-5">
+            <div class="logo">
+                <img src="imgs/logopng.png" width="90px" height="50px" class="logo-image" alt="Logo">
             </div>
-        </nav>
-        <!--Class de Video sendo que ele irá começar assim que abrir o site, em loop e sem som-->
-        <div class="video">
-            <video autoplay loop muted style="width: 100%; height:100%">
-                <source src="videos/video.mp4" type="video/mp4">O browser não suporta o elemento de vídeo.
-            </video>
-        </div>
-        <!--Class de Audio sendo que ele irá começar assim que abrir o site, em loop e com os controls-->
-        <div class="audio">
-            <audio autoplay loop controls>
-                <source src="audio/audio.mp3" type="audio/ogg">O browser não suporta o elemento de audio.
-            </audio>
-        </div>
-        <main>
-            <h1 class="main-title">Os mais esperados!</h1>
-            <!--Secção 1 Cards dos eventos mais vistos-->
-            <section class="container-cards">
-                <div class="carrossel">
-                    <button class="prev-button" id="prevBtn">&#10094</button>
-                    <div class="card show" id="card1">                      
-                        <img src="imgs/imagem_1.jpg" alt="Imagem1" >
-                        <div class="content" id="text">
-                            <h4>Imagem1</h4>
-                            <p>Algum texto para a Imagem 1</p>
-                        </div>
-                    </div>
-                    <div class="card" id="card2">
-                        <img src="imgs/imagem_2.jpg" alt="Imagem2">
-                        <div class="content" id="text">
-                            <h4>Imagem2</h4>
-                            <p>Algum texto para a Imagem 2</p>
-                        </div>                        
-                    </div>
-                    <div class="card" id="card3">                        
-                        <img src="imgs/imagem_3.jpg"alt="Imagem3">
-                        <div class="content" id="text">
-                            <h4>Imagem3</h4>
-                            <p>Algum texto para a Imagem 3</p>
-                        </div>
-                    </div>
-                    <button class="next-button" id="nextBtn">&#10095</button>
-                   
-                </div>
-            </section>
-            <section>
-                <div class="slider-nav">
-                    <a href="" class="pointer active" data-index="0"></a>
-                    <a href="" class="pointer" data-index="1"></a>
-                    <a href="" class="pointer" data-index="2"></a>
-                </div>
-            </section>
-            <hr>
-            <div class="events-title">
-                <h1 class="main-title">Outros Eventos!</h1>
+            <h1 class="name_titulo">Make Memories</h1>
+            <div class="container-button navbar-toggler navbar-toggler-right" onclick="switchBurguer(this)"
+                data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
             </div>
-            <section class="other-events">
-                <section class="gallery">
-                    <ul>
-                        <li>
-                            <a href="1stevent.html">
-                                <figure>
-                                    <img src="imgs/imagem_1.jpg" alt="Imagem1">
-                                    <figcaption>Primeiro Evento</figcaption>
-                                </figure>
-                            </a>                
-                        </li>
-                        <li>
-                            <a href="">
-                                <figure>
-                                    <img src="imgs/imagem_2.jpg" alt="Imagem2">
-                                    <figcaption>Segundo Evento</figcaption>
-                                </figure>             
-                            </a>       
-                        </li>
-                        <li>
-                            <a href="">
-                                <figure>
-                                    <img src="imgs/imagem_3.jpg" alt="Imagem3">
-                                    <figcaption>Terceiro Evento</figcaption>
-                                </figure> 
-                            </a>                   
-                        </li>
-                    </ul>
-                </section>
-                <div class="div-button">
-                    <section class="section-button">
-                        <a href="events.html">
-                            <button class="button-more">
-                                Ver mais &#x27F6;
-                            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Eventos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contacte-nos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Class de Video sendo que ele irá começar assim que abrir o site, em loop e sem som-->
+    <div class="video">
+        <video autoplay loop muted style="width: 100%; height:100%">
+            <source src="videos/video.mp4" type="video/mp4">O browser não suporta o elemento de vídeo.
+        </video>
+    </div>
+    <!--Class de Audio sendo que ele irá começar assim que abrir o site, em loop e com os controls-->
+    <div class="audio">
+        <audio autoplay loop controls>
+            <source src="audio/audio.mp3" type="audio/ogg">O browser não suporta o elemento de audio.
+        </audio>
+    </div>
+    <main>
+        <h1 class="main-title">Os mais esperados!</h1>
+        <!--Secção 1 Cards dos eventos mais vistos-->
+        <section class="container-cards">
+            <div class="carrossel">
+                <button class="prev-button" id="prevBtn">&#10094</button>
+                <div class="card show" id="card1">
+                    <a href="wedding_event.html">
+                        <img src="imgs/wedding.jpeg" alt="Casamento">
+                    </a>
+                    <div class="content" id="text">
+                        <h4>Casamentos</h4>
+                        <p>O Casamento não é só um evento, é um ato de amor, um passo a dois.</p>
+                    </div>
+                </div>
+                <div class="card" id="card2">
+                    <a href="skydiving_event.html">
+                        <img src="imgs/skydiving.png" alt="Skydiving">
+                    </a>
+                    <div class="content" id="text">
+                        <h4>Skydiving</h4>
+                        <p>É o salto de paraquedas mais popular do mundo, perfeito para quem procura uma experiência
+                            única, cheia de emoções fortes, sem exigir experiência prévia.</p>
+                    </div>
+                </div>
+                <div class="card" id="card3">
+                    <a href="ferrari_event.html">
+                        <img src="imgs/ferrari.png" alt="Evento no Circuito do Estoril">
+                    </a>
+                    <div class="content" id="text">
+                        <h4>Evento no Circuito do Estoril</h4>
+                        <p>Velocidade e potência automóvel. Este é o ideal para amantes de automobilismo!</p>
+                    </div>
+                </div>
+                <button class="next-button" id="nextBtn">&#10095</button>
+
+            </div>
+        </section>
+        <section>
+            <div class="slider-nav">
+                <a href="" class="pointer active" data-index="0"></a>
+                <a href="" class="pointer" data-index="1"></a>
+                <a href="" class="pointer" data-index="2"></a>
+            </div>
+        </section>
+        <hr>
+        <div class="events-title">
+            <h1 class="main-title">Outros Eventos!</h1>
+        </div>
+        <section class="other-events">
+            <section class="gallery">
+                <ul>
+                    <li>
+                        <a href="cruzeiro_event.html">
+                            <figure>
+                                <img src="imgs/cruzeiro.png" alt="Cruzeiro das 6 Pontes do Douro">
+                                <figcaption>Cruzeiro das 6 Pontes do Douro</figcaption>
+                            </figure>
                         </a>
-                    </section>                
-                </div>                
-            </section>    
-            
-        </main>
-        <footer>
-            <!--Footer-->
-            <div class="footer-info">
-                <!--Social-->
-                <div class="social">
+                    </li>
+                    <li>
+                        <a href="enduro_event.html">
+                            <figure>
+                                <img src="imgs/enduro.png" alt="Enduro e TT e Passeios">
+                                <figcaption>Enduro e TT e Passeios</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cinema_event.html">
+                            <figure>
+                                <img src="imgs/cinema.png" alt="Eventos em Cinema">
+                                <figcaption>Eventos em Cinema</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <div class="div-button">
+                <section class="section-button">
+                    <a href="events.html">
+                        <button class="button-more">
+                            Ver mais &#x27F6;
+                        </button>
+                    </a>
+                </section>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <!--Footer-->
+        <div class="footer-info">
+            <!--Social-->
+            <div class="social">
                 <a href="#"><img src="imgs/linkedin.png" alt="linkedin"></a>
                 <a href="#"><img src="imgs/whatsapp.png" alt="Whatsapp"></a>
                 <a href="#"><img src="imgs/facebook.png" alt="Facebook"></a>
                 <a href="#"><img src="imgs/youtube.png" alt="Youtube"></i></a>
-                </div>
-            
-         
-            <!--Pages-->
-                <ul class="list-inline">
-                    <li class="list-inline-item"><a href="index.html">Início</a></li>
-                    <li class="list-inline-item"><a href="events.html">Eventos</a></li>
-                    <li class="list-inline-item"><a href="about.html">Sobre</a></li>
-                    <li class="list-inline-item"><a href="login.html">Login</a></li>
-                    <li class="list-inline-item"><a href="contact.html">Contacte-nos</a></li>
-                </ul>
-                <p class="copyright">Make Memories © 2024</p>
-            <!-- Adicione elementos do rodapé aqui, como informações de contato -->
             </div>
-        </footer>
-    </body>
-    <script src="script/theme.js"></script>
-    <script src="script/index.js"></script>
-    <script src="script/darkmode.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-    </script>
-</html>
 
+
+            <!--Pages-->
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="index.html">Início</a></li>
+                <li class="list-inline-item"><a href="events.html">Eventos</a></li>
+                <li class="list-inline-item"><a href="about.html">Sobre</a></li>
+                <li class="list-inline-item"><a href="login.html">Login</a></li>
+                <li class="list-inline-item"><a href="contact.html">Contacte-nos</a></li>
+            </ul>
+            <p class="copyright">Make Memories © 2024</p>
+            <!-- Adicione elementos do rodapé aqui, como informações de contato -->
+        </div>
+    </footer>
+</body>
+<script src="script/theme.js"></script>
+<script src="script/index.js"></script>
+<script src="script/darkmode.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+
+</html>
