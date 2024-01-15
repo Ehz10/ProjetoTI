@@ -1,6 +1,6 @@
 /*Main*/
 main{
-  background-image: url(imgs/view.jpg);
+  background-image: url(/imgs/view.jpg);
     background-size: cover; 
 }
 
