@@ -62,16 +62,21 @@ audio {
         justify-content: center;
     }
     /*Estilo dos cards em carrossel*/
-    .card{
-        width: auto;
+    .figure-card{
         display: none;
         background-color: #cfcfcfe8;
         border-radius: 15px;
         transition: opacity 0.5s ease-in-out;
-        margin-right: 5px;
-        margin-left: 5px;
         scroll-snap-align: start;
         border: 2px solid rgba(0, 0, 0, 0.699);
+        max-width: 400px;
+        max-height: 500px;
+        padding: 3rem;
+        border-radius: 15px;
+        background-color: #353535;
+    }
+    a{
+        text-decoration: none;
     }
     .show{
         display: block;
@@ -79,26 +84,30 @@ audio {
         height: 100%;
         opacity: 1;
     }
-    .card img{
+    .figure-card img{
+        border-radius: 15px 15px 15px 15px;
         width: 100%;
-        border-radius: 15px 15px 0px 0px;
+        height: 100%;
+        max-height: 80%;
     }
-    .content{
-        width: 100%;
-        height: 100px;
-        margin-bottom: 30px;
-        margin-left: 10px;
-        margin-right: 10px;
+    .figcaption-card{
+        background-color: #353535;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-size: 30px;
+        border-radius: 0px 0px 15px 15px;
     }
-    .card h4{
+    .figure-card h4{
         text-align: center;
         font-weight: 5px;
         font-size: 30px;
     }
-    .card p{
+    .figure-card p{
         text-align: center;
         justify-content: center;
         align-items: left;
+        font-size: 12px;
     }
     .prev-button{
         margin-left: 10px;
@@ -159,7 +168,7 @@ audio {
         justify-content: center;
         height: 50%;
     }
-    figure img{
+    .figure-events img{
         width: 100%;
         display: block;
         aspect-ratio: 1/1;
@@ -176,7 +185,7 @@ audio {
         max-width: 100%;
         width: 100%;
     }
-    figure{
+    .figure-events{
         border-radius: 15px;
         margin: 0;
         position: relative;
@@ -201,19 +210,19 @@ audio {
   a{
     text-decoration: none;
   }
-  figure{
+  .figure-events{
     padding: 1rem;
     margin: 20px;
     border-radius: 15px;
     box-shadow: 15px 10px 10px grey;
     background-color: #353535;
   }
-  figure img{
+  .figure-events img{
     border-radius: 15px 15px 0px 0px;
     width: 100%;
     height: 100%;
   }
-  figcaption{
+  .figcaption-events{
     background-color: rgb(51, 51, 51);
     text-align: center;
     text-decoration: none;
@@ -225,7 +234,7 @@ audio {
 /*Este estilo apenas aparece quando o despositivo a ser apresentado é um computador*/
 @media (hover:hover){
     /*Criar o background para quando o cursor passa por cima das imagens*/
-    figure::after{
+    .figure-events::after{
         content: '';
         position: absolute;
         top: 50%;
@@ -239,7 +248,7 @@ audio {
         transition: opacity 300ms;
     }
     /*Estilo para o texto da figura*/
-    figcaption{
+    .figcaption-events{
         position: absolute;
         top: 0;
         left: 0;
